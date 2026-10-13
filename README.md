@@ -4,8 +4,6 @@
 
 Solo-built. The garage app is iOS and Android. The public site is live at [rpmbase.app](https://rpmbase.app). Store listings are not the homepage yet: until they are, [Download](https://rpmbase.app/download) is the waitlist. Source is private. This repo is the public engineering summary.
 
-I built it because car ownership usually lives in folders, photos, and memory. I wanted a private log for the car I already drive, not a classifieds board and not a 18,000-model catalogue.
-
 ## Product
 
 <p align="center">
@@ -24,6 +22,12 @@ I built it because car ownership usually lives in folders, photos, and memory. I
   &nbsp;·&nbsp;
   <a href="https://rpmbase.app/download">Download / waitlist</a>
 </p>
+
+## Why this exists
+
+Car ownership already has a vehicle. It does not need another catalogue or a public listing. It needs a log that survives the glovebox: service, fuel, costs, insurance, and what is due next.
+
+RPMBase is that log. The mission is to keep the car you own documented and private. The app holds the garage. The website teaches and has calculators you can use without an account. Ask can read the records you logged. It is not a workshop and it is not a marketplace.
 
 ## What I shipped
 
@@ -45,26 +49,14 @@ Three calls that keep RPMBase from becoming a second RPMVault:
 
 The website is English, Turkish, Spanish, and German. The app is English and Turkish. Ask is informational, not a workshop.
 
-## Stack
-
-| | |
-| --- | --- |
-| Website | Next.js 15, React 19, Tailwind CSS 4 |
-| Mobile | Expo SDK 57, React Native 0.86 |
-| API | Node.js, Express 5, Vercel |
-| Data | MongoDB Atlas |
-| Auth | Firebase: email, Google, Sign in with Apple |
-| Billing | App Store and Google Play, verified on the server |
-
 ```
-Website (Next.js)     public pages, no garage data
-                      rpmbase.app
+Website     public pages, no garage data
 
-iOS / Android    ─── HTTPS, signed-in requests ─► API (Node / Express)
-                                                  │
-                                                  ├─ MongoDB
-                                                  ├─ Firebase Auth
-                                                  └─ App Store / Play billing
+iOS / Android  ─── signed-in requests ─► API
+                                         │
+                                         ├─ database
+                                         ├─ auth
+                                         └─ store billing
 ```
 
 Private garage data is available only to a signed-in account in the app. Implementation details stay with the private source.
