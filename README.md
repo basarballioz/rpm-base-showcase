@@ -6,6 +6,25 @@ Solo-built. The garage app is iOS and Android. The public site is live at [rpmba
 
 I built it because car ownership usually lives in folders, photos, and memory. I wanted a private log for the car I already drive, not a classifieds board and not a 18,000-model catalogue.
 
+## Product
+
+<p align="center">
+  <img src="screenshots/01-home.jpg" width="240" alt="Home with the car you own, mileage, and spend" />
+  <img src="screenshots/02-garage.jpg" width="240" alt="Garage dashboard with insurance dates, fuel, and service" />
+  <img src="screenshots/03-service.jpg" width="240" alt="Maintenance history with dates, mileage, and cost" />
+</p>
+<p align="center">
+  <img src="screenshots/04-costs.jpg" width="240" alt="Ownership cost breakdown for service, fuel, and other spend" />
+  <img src="screenshots/05-activity.jpg" width="240" alt="Activity with upcoming insurance and inspection reminders" />
+  <img src="screenshots/06-ask.jpg" width="240" alt="Ask using the selected car and garage records" />
+</p>
+
+<p align="center">
+  <a href="https://rpmbase.app">Website</a>
+  &nbsp;·&nbsp;
+  <a href="https://rpmbase.app/download">Download / waitlist</a>
+</p>
+
 ## What I shipped
 
 Website, mobile app, and API. Waitlist and SEO. Store billing when the listings go live. If it ships, I own it.
@@ -50,6 +69,4 @@ iOS / Android    ─── HTTPS, signed-in requests ─► API (Node / Express)
 
 Private garage data is available only to a signed-in account in the app. Implementation details stay with the private source.
 
-Product screenshots (no plates, VIN, or documents) will land in `screenshots/` next.
-
-_README only for now. Source is private. All rights reserved._
+_README and screenshots only. Source is private. All rights reserved._
