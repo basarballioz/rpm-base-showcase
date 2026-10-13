@@ -7,6 +7,10 @@ Solo-built. The garage app is iOS and Android. The public site is live at [rpmba
 ## Product
 
 <p align="center">
+  <img src="screenshots/product-loop.gif" width="360" alt="RPMBase screens looping: home, garage, service, costs, activity, and Ask" />
+</p>
+
+<p align="center">
   <img src="screenshots/01-home.jpg" width="240" alt="Home with the car you own, mileage, and spend" />
   <img src="screenshots/02-garage.jpg" width="240" alt="Garage dashboard with insurance dates, fuel, and service" />
   <img src="screenshots/03-service.jpg" width="240" alt="Maintenance history with dates, mileage, and cost" />
